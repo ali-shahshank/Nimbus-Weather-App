@@ -1,0 +1,349 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #3498db; /* Blue */
+  --secondary-color: #2ecc71; /* Green */
+  --accent-color: #e74c3c; /* Red */
+  --background-color: #f4f4f4; /* Light Gray */
+  --text-color: #2c3e50; /* Dark Gray */
+}
+
+.burnt-orange {
+  color: #ff8c00 !important;
+}
+.burnt-orange-border {
+  border: solid 2px;
+  border-color: #ff8c00 !important;
+}
+
+.text-uv-low {
+  color: #3ea72d !important;
+}
+.text-uv-moderate {
+  color: #fff300 !important;
+}
+.text-uv-high {
+  color: #c57300 !important;
+}
+.text-uv-very-high {
+  color: #e53210 !important;
+}
+.text-uv-extreme {
+  color: #b567a4 !important;
+}
+
+.bg-uv-low {
+  background-color: #3ea72d !important;
+}
+.bg-uv-moderate {
+  background-color: #fff300 !important;
+}
+.bg-uv-high {
+  background-color: #f18b00 !important;
+}
+.bg-uv-very-high {
+  background-color: #e53210 !important;
+}
+.bg-uv-extreme {
+  background-color: #b567a4 !important;
+}
+
+/* Progress bar container styling */
+.progress {
+  background-color: #e9ecef;
+  border-radius: 0.25rem;
+  overflow: hidden;
+}
+
+/* Current Weather */
+#current-weather-card {
+  height: 360px !important;
+  min-width: 100% !important;
+}
+
+@media (max-width: 575.98px) {
+  #current-weather-card {
+    height: 465px !important;
+    min-width: 100% !important;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  #current-weather-card {
+    height: 480px !important;
+    min-width: 100% !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  #current-weather-card {
+    height: 360px !important;
+    min-width: 100% !important;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  #current-weather-card {
+    height: 360px !important;
+    min-width: 100% !important;
+  }
+}
+
+#weather-icon {
+  height: 400px !important;
+  width: 400px !important;
+  margin: 0 auto !important;
+  display: block !important;
+  padding: 0 !important;
+}
+
+@media (max-width: 568px) {
+  #weather-icon {
+    height: 260px !important;
+    width: 260px !important;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  #weather-icon {
+    height: 286px !important;
+    width: 286px !important;
+  }
+}
+
+/* Hourly Forecast */
+#hourly-forecast-card {
+  height: 360px !important;
+  min-width: 100% !important;
+}
+
+@media (max-width: 575.98px) {
+  #hourly-forecast-card {
+    height: 465px !important;
+    min-width: 100% !important;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  #hourly-forecast-card {
+    height: 480px !important;
+    min-width: 100% !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  #hourly-forecast-card {
+    height: 360px !important;
+    min-width: 100% !important;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  #hourly-forecast-card {
+    height: 360px !important;
+    min-width: 100% !important;
+  }
+}
+
+/* Hourly-forecast-right */
+
+@media (max-width: 575.98px) {
+  #hourly-forecast-right {
+    height: 300px !important;
+    min-width: 100% !important;
+  }
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+  #hourly-forecast-right {
+    height: 300px !important;
+    min-width: 100% !important;
+  }
+}
+
+/* Weekly Forecast */
+#weekly-forecast-card {
+  height: 360px !important;
+  min-width: 100% !important;
+}
+@media (max-width: 575.98px) {
+  #weekly-forecast-card {
+    height: 465px !important;
+    min-width: 100% !important;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  #weekly-forecast-card {
+    height: 480px !important;
+    min-width: 100% !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  #weekly-forecast-card {
+    height: 360px !important;
+    min-width: 100% !important;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  #weekly-forecast-card {
+    height: 360px !important;
+    min-width: 100% !important;
+  }
+}
+
+/* Weekly-forecast-right */
+@media (max-width: 575.98px) {
+  #weekly-forecast-right {
+    height: 300px !important;
+    min-width: 100% !important;
+  }
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+  #weekly-forecast-right {
+    height: 300px !important;
+    min-width: 100% !important;
+  }
+}
+
+/* Weekly-forecast-icon */
+#weekly-forecast-icon {
+  width: 160px;
+  height: 160px;
+  margin: 0 auto;
+}
+
+@media (max-width: 575.98px) {
+  #weekly-forecast-icon {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  #weekly-forecast-icon {
+    width: 132px;
+    height: 132px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  #weekly-forecast-icon {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media (min-width: 1025px) {
+  #weekly-forecast-icon {
+    width: 186px;
+    height: 186px;
+  }
+}
+
+/* AQI card */
+#AQI-card {
+  height: 370px !important;
+  min-width: 100% !important;
+}
+@media (max-width: 575.98px) {
+  #AQI-card {
+    height: 520px !important;
+    min-width: 100% !important;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  #AQI-card {
+    height: 540px !important;
+    min-width: 100% !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  #AQI-card {
+    height: 460px !important;
+    min-width: 100% !important;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  #AQI-card {
+    height: 450px !important;
+    min-width: 100% !important;
+  }
+}
+
+/* UV-Card */
+#UV-card {
+  height: 370px !important;
+  min-width: 100% !important;
+  background-color: #ff8c00 !important;
+  border: solid 1px #e88204 !important;
+}
+@media (max-width: 575.98px) {
+  #UV-card {
+    height: 520px !important;
+    min-width: 100% !important;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  #UV-card {
+    height: 540px !important;
+    min-width: 100% !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  #UV-card {
+    height: 460px !important;
+    min-width: 100% !important;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  #UV-card {
+    height: 450px !important;
+    min-width: 100% !important;
+  }
+}
+
+/* Footer */
+#footer-logo {
+  height: 52px !important;
+  width: auto !important;
+}
+
+@media (max-width: 575.98px) {
+  #footer-logo {
+    height: 28px !important;
+    width: auto !important;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  #footer-logo {
+    height: 42px !important;
+    width: auto !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  #footer-logo {
+    height: 52px !important;
+    width: auto !important;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  #footer-logo {
+    height: 52px !important;
+    width: auto !important;
+  }
+}
