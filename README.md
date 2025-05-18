@@ -13,6 +13,7 @@
 - Real-time UV Index with descriptive risk levels
 - Weather-based animated icons and dynamic UI
 - Auto-refresh with loading states
+- Integrated Dark-mode and Light-mode
 - Fully responsive design for all devices
 
 ---
