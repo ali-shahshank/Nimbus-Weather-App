@@ -172,7 +172,7 @@ function UVCard({ city }) {
             </div>
             {/* UV Data */}
             <div className="col-12 col-md-6 d-flex flex-column justify-content-end align-items-center">
-              {/* Error Handing for ADI data */}
+              {/* Error Handing for UV data */}
               <ul className="list-unstyled d-flex justify-content-center align-items-center ">
                 <li>
                   {error && (
@@ -250,7 +250,7 @@ async function fetchUV({ lat, lon }) {
       import.meta.env.VITE_API_KEY
     }`
   );
-  if (!res.ok) throw new Error("UV data failed");
+  if (!res.ok) throw new Error("Unable to fetch UV Data");
   return res.json();
 }
 

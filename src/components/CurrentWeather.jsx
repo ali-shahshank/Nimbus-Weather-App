@@ -34,7 +34,7 @@ const CurrentWeather = ({ city }) => {
         <div className="row">
           <div className="col-sm-12 col-md-12 p-4 p-md-5 d-flex justify-content-center align-items-center">
             <div
-              className="col-12 col-md-12 bg-primary text-light p-2 d-flex flex-column flex-md-row rounded-4"
+              className="col-12 col-md-12 p-2 d-flex flex-column flex-md-row rounded-4 bg-primary text-light"
               id="current-weather-card"
             >
               {/* Left Column - Weather Details */}

@@ -135,7 +135,7 @@ function AQICard({ city }) {
     <>
       <div className="col-12 col-md-6 p-4 p-md-5 d-flex justify-content-center align-items-center">
         <div
-          className="col-12 col-md-6 bg-light p-2 p-md-4 rounded-4 border"
+          className="col-12 col-md-6 bg-light p-2 p-md-4 rounded-4 border text-dark"
           id="AQI-card"
         >
           <div className="row d-flex flex-column flex-md-row">

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useEffect } from "react";
 import CurrentWeather from "./components/CurrentWeather";
 import { useUnit } from "./contexts/UnitContext";
 import Header from "./components/Header";
@@ -13,12 +14,32 @@ function App() {
   const [city, setCity] = useState("Toronto");
   const { unit, toggleUnit } = useUnit();
   const [error, setError] = useState("");
+  const [theme, setTheme] = useState("light");
+
+  // UseEffect to set the theme
+  useEffect(() => {
+    document.documentElement.setAttribute("data-bs-theme", theme);
+  }, [theme]);
+
+  // Theme Toggle (Dark Mode - Light Mode)
+  // const toggleTheme = () => {
+  //   setTheme((prev) => (prev === "light" ? "dark" : "light"));
+  // };
+
+  const darkMode = () => {
+    setTheme("dark");
+  };
+
+  const lightMode = () => {
+    setTheme("light");
+  };
 
   const handleGeolocation = () => {
     if (!navigator.geolocation) {
       setError("Geolocation not supported.");
       return;
     }
+
     navigator.geolocation.getCurrentPosition(
       async (position) => {
         const { latitude, longitude } = position.coords;
@@ -57,7 +78,7 @@ function App() {
           <a href="#" className="navbar-brand">
             <img
               src="/Nimbus-logo.png"
-              alt=""
+              alt="Nimbus-logo-light"
               className="img-fluid"
               style={{ height: "28px" }}
             />
@@ -70,32 +91,30 @@ function App() {
             <i className="bi bi-list fs-1 border-0"></i>
           </a>
           <div className="collapse navbar-collapse " id="mainNav">
+            {/* Theme Toggle Dark Mode - Light Mode */}
             <ul className="navbar-nav mx-auto gap-2 d-flex flex-row justify-content-center align-items-center py-4 py-md-0">
               <li className="nav-item">
-                <a
-                  href=""
-                  className="nav-link d-flex align-items-center justify-content-center rounded-circle bg-white"
+                <button
+                  className="nav-link d-flex align-items-center justify-content-center rounded-circle border"
                   style={{
                     width: "40px",
                     height: "40px",
-                    border: "thin solid #ececec ",
                   }}
                 >
-                  <i className="bi bi-moon-fill"></i>
-                </a>
+                  <i className="bi bi-moon-fill" onClick={darkMode}></i>
+                </button>
               </li>
-              <li className="nav-item">
-                <a
-                  href=""
-                  className="nav-link d-flex align-items-center justify-content-center rounded-circle bg-white"
+              <li className="nav-link">
+                <button
+                  className="nav-link d-flex align-items-center justify-content-center rounded-circle border"
                   style={{
                     width: "40px",
                     height: "40px",
-                    border: "thin solid #ececec",
                   }}
+                  onClick={lightMode}
                 >
                   <i className="bi bi-brightness-high-fill"></i>
-                </a>
+                </button>
               </li>
             </ul>
             <ul className="navbar-nav gap-2">

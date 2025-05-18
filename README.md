@@ -6,7 +6,7 @@
 
 ## Features
 
-- Search weather by city or geolocation
+- Search weather by city or geo-location
 - Hourly and 5-day forecast
 - Toggle between °C and °F
 - Real-time Air Quality Index (AQI) with visual indicators

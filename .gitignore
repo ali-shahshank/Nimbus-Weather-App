@@ -23,5 +23,8 @@ dist-ssr
 *.sln
 *.sw?
 
+# Directories and Files
+.ThemeContext.jsx
+
 # Environment files
 .env
