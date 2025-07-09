@@ -57,18 +57,19 @@ const CurrentWeather = ({ city }) => {
                   </li>
                   <li className="my-2">
                     <h6 className="fs-6">
-                      Fells Like: {Math.round(weather.main.feels_like)}°{" "}
+                      <i class="bi bi-thermometer-half me-2"></i>
+                      Feels Like: {Math.round(weather.main.feels_like)}°{" "}
                     </h6>
                   </li>
                   <li className="my-3">
                     <h6 className="fs-6 ">
-                      <i className="bi bi-droplet-fill me-2"></i> Humidity:{" "}
+                      <i className="bi bi-droplet-fill me-2"></i>Humidity:
                       {weather.main.humidity}%
                     </h6>
                   </li>
                   <li>
                     <h6 className="fs-6 ">
-                      <i className="bi bi-wind me-2"></i> Wind:{" "}
+                      <i className="bi bi-wind me-2"></i>Wind:{" "}
                       {Math.round(weather.wind.speed)}
                       {unit === "metric" ? "m/s" : "mph"}
                     </h6>
